@@ -1,11 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import './App.css';
 import Recipe from './Recipe';
+import { APP_ID, APP_KEY} from './keys'
 
 const App = () => {
-  const APP_ID = "20ffc04d";
-  const APP_KEY = "e6c7f739e935a020ab7892d9d9afc4ae";
-
   const[recipes, setRecipes] = useState([]); 
   const [search, setSearch] = useState('');
   const [query, setQuery] = useState('chicken'); //query is created to fetch the data only once when click the submit button
